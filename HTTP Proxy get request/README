@@ -21,7 +21,7 @@ Content-Length: 405
 <the file itself – 405 bytes>
  Total response bytes: 442
 
-compile:gcc -Wall –o proxy1 proxy1.c
+compile:gcc -Wall –o proxy proxy.c
 run: ./proxy1 <URL>
 
 remarks:
