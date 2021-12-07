@@ -1,0 +1,34 @@
+
+Simulation of main memory management.
+The memory mapping system in the exercise assumes that there is a table of pages that maps the logical pages to frames in the physical memory. If the process page is on
+The disk is then fault-pageed and the page is framed in memory. We assume a virtual hook memory of one program. Your simulation program
+Use the file that is the logical memory. In addition, there is a table of pages for this program, a physical memory to which the pages are brought, and a space to which a passage will be evacuated.
+From the main memory pages that have changed.
+--compile instructions  --
+In the terminal:
+compile: gcc main.c mem_sim.c –o app
+run:./mem_sim.c
+
+
+--input and output--
+for example if my logical memory contains: aaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrsssstttt
+and i enter:
+    val1 = load(64, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val2 = load(34, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val3 = load(2, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val4 = load(15, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val5 = load(30, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val6= load(79, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val7 = load(25, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val8 = load(7, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    val9 = load(55, page_table, mainMemory, logicalmem_fd, swapfile_fd);
+    print_memory(mainMemory);
+output- gggg
+        bbbb
+        nnnn
+        dddd
+        hhhh
+        tttt
+
+q i a d h t g b n
+
