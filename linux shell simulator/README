@@ -1,0 +1,36 @@
+The program materializes a terminal that works in Linux. 
+The program supports regular commands, commands that use the pipe for example ls -l | wc. and commands of writing and reading to a file for example ls -l > out. 
+
+--compile instructions  --
+In the terminal:
+compile: gcc mini_shell.c -o mini_shell
+ run: ./mini_shell
+
+--input and output--
+you can enter almost every command of the terminal and receive the correct output.
+for example:
+inpput: ls -l
+output:
+-rw-rw-r-- 1 student student 23087 Apr 25 13:50  CMakeCache.txt
+drwxrwxr-x 5 student student  4096 Apr 29 13:39  CMakeFiles
+-rw-rw-r-- 1 student student  1655 Apr 23 12:17  cmake_install.cmake
+-rw-r--r-- 1 student student     0 Apr 29 13:15 ' echo helloworld'$'\n'
+-rwxrwxr-x 1 student student 27920 Apr 29 13:39  HW2
+-rw-rw-r-- 1 student student  5010 Apr 25 13:50  HW2.cbp
+-rw-rw-r-- 1 student student  5241 Apr 25 13:50  Makefile
+-rw-r--r-- 1 student student   352 Apr 25 18:09 '%s '
+-rw-r--r-- 1 student student   352 Apr 25 17:51  temp
+-rw-r--r-- 1 student student   413 Apr 25 19:10 'temp '
+drwxrwxr-x 3 student student  4096 Apr 23 12:17  Testing
+
+input:echo hello world
+output:
+hello world
+
+input:ls -l | wc -l
+output:
+13
+
+input:ls -l > out
+output:
+opens file in na,e out and puts inside the output of ls -l
