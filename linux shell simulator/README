@@ -3,7 +3,7 @@ The program supports regular commands, commands that use the pipe for example ls
 
 --compile instructions  --
 In the terminal:
-compile: gcc mini_shell.c -o mini_shell
+compile: gcc miniShell.c -o miniShell
  run: ./mini_shell
 
 --input and output--
