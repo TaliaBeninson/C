@@ -1,0 +1,28 @@
+This file contains a HTTP Proxy that gets requests from the user and check if the requested file appears in its DB, if yes,
+the file is provided from the local filesystem, otherwise, it constructs an HTTP request based on user’s
+command line input, sends the request to a Web server, receives the reply from the server, saves the
+file locally and displays the reply message on screen.
+
+input: <URL>.
+output: examples-
+1. If the file is given from local filesystem:
+File is given from local filesystem
+HTTP/1.0 200 OK
+Content-Length: 405
+<the file itself – 405 bytes>
+ Total response bytes: 442
+
+2. If the file is given from the server:
+HTTP request =
+<http request>
+LEN = 143
+HTTP/1.0 200 OK
+Content-Length: 405
+<the file itself – 405 bytes>
+ Total response bytes: 442
+
+compile:gcc -Wall –o proxy1 proxy1.c
+run: ./proxy1 <URL>
+
+remarks:
+assume that the url has to start with http://
