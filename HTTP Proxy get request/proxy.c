@@ -224,7 +224,6 @@ int main(int argc, char* argv[]) {
         }
         strcat(temp,"/index.html");
     }
-    //printf("temp %s\n",temp);
     int flag =isFile(temp);
     if(access(temp,F_OK)==0 && flag==1)//check if file exists print to screen file content
     {
